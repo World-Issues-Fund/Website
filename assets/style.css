@@ -1,0 +1,133 @@
+/* Style the body */
+body {
+    background-color: #171a1b;
+    font-family: 'Satisfy', cursive;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Header/logo Title */
+.header {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    /*background: #7289DA;*/
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://wallpapertag.com/wallpaper/full/0/6/3/49612-mountains-wallpaper-1920x1080-for-android-40.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 20px;
+    position: relative;
+    color: #ffffff;
+    line-height: 0.9;
+    text-align: center;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until
+a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is
+not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default
+position */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #252a2b;
+    color: white;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: #171a1b;
+    padding: 20px;
+}
+
+/* Codeblocks */
+pre {
+    background: #000;
+    border-radius: 10px;
+    padding: .5rem;
+    word-break: keep-all;
+    white-space: pre-wrap;
+    display: block;
+    font-family: Ubuntu Mono, Courier New, Courier, monospace;
+}
+
+code {
+    background-color: #000;
+    /*color: #e83e8c !important;
+color: #99AAB5;*/
+    padding: 2px 4px;
+    font-size: 87.5%;
+    border-radius: 4px;
+    font-family: Ubuntu Mono, Courier New, Courier, monospace;
+}
+
+a {
+    color: inherit
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #2C2F33;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other
+instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
