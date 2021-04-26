@@ -99,6 +99,18 @@ position */
     margin:15px;
     text-align:center;
 }
+
+/* Style the navigation bar links */
+.game a {
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: #252a2b;
+}
+/* Change color on hover */
+.game a:hover {
+    background-color: #555;
+}
+
 /* Codeblocks */
 pre {
     background: #000;
