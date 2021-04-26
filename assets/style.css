@@ -98,13 +98,27 @@ position */
     padding:50px;
     margin:15px;
     text-align:center;
+    background-image: url('https://res.cloudinary.com/rhg/image/upload/v1619317166/i8nqgiafnp2xznxcgli9.png');
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.game::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.452);
 }
 
 /* Style the navigation bar links */
 .game a {
     padding: 14px 20px;
     text-decoration: none;
-    background-color: #252a2b;
+    background-color: #333;
 }
 /* Change color on hover */
 .game a:hover {
